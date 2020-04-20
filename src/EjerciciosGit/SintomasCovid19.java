@@ -15,7 +15,25 @@ public class SintomasCovid19
 
 	public static void main(String[] args) {
 
+		int temperatura=0;
+		int ResultadoTemperatura=0;
 		
+		System.out.println("ingreso a la cámara detectora \n"
+				          + " del segundo síntoma del covid-19 \n");
+		System.out.println("Por favor ingrese su temperatura \n");
+		
+		Scanner entrada = new Scanner(System.in);
+		temperatura=entrada.nextInt();
+		
+		if (temperatura>37) {
+			
+			System.out.println("necesitas chequeo de un médico \n, "
+					+ "pues tienes uno de los síntomas de virus \n");
+			
+		}else{
+			System.out.println("CUIDATE");
+			
+		}
 		
 		
 	}
